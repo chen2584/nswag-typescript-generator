@@ -1,3 +1,13 @@
 # nswag-script
 
-Generate from Swagger by NSwag. 
+Generate TypeScript Client from Swagger by NSwag. 
+
+### USAGE
+```
+dotnet run
+cd script
+dotnet script nswag.csx
+```
+
+### Output
+`generated/Api.ts`

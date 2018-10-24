@@ -46,9 +46,13 @@ namespace TestNSwag
 
             //app.UseHttpsRedirection();
             app.UseMvc();
-            //app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1"); // for swagger ui explorer
+            });
             app.UseSwaggerUi3WithApiExplorer(settings =>
             {
+                // for NSwag generator
                 settings.GeneratorSettings.DefaultPropertyNameHandling = PropertyNameHandling.CamelCase;
             });
         }
