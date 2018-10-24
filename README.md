@@ -1,4 +1,4 @@
-# nswag-script
+# nswag-typescript-generator
 
 Generate TypeScript Client from Swagger by NSwag. 
 
